@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/1202-three/Android%20app/finalPro/WordStudy/WordStudy/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">WordStudy</string>
+    <string name="hello">Hello World, Main!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
