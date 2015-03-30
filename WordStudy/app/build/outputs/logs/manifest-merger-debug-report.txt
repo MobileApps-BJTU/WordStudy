@@ -1,0 +1,105 @@
+-- Merging decision tree log ---
+manifest
+ADDED from AndroidManifest.xml:2:1
+	package
+		ADDED from AndroidManifest.xml:3:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:versionName
+		ADDED from AndroidManifest.xml:5:7
+	android:versionCode
+		ADDED from AndroidManifest.xml:4:7
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	xmlns:android
+		ADDED from AndroidManifest.xml:2:11
+application
+ADDED from AndroidManifest.xml:6:5
+MERGED from com.android.support:support-v4:22.0.0:22:5
+	android:label
+		ADDED from AndroidManifest.xml:6:48
+	android:icon
+		ADDED from AndroidManifest.xml:6:18
+activity#wordroid.activitys.Main
+ADDED from AndroidManifest.xml:7:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:10:19
+	android:label
+		ADDED from AndroidManifest.xml:8:19
+	android:configChanges
+		ADDED from AndroidManifest.xml:9:19
+	android:name
+		ADDED from AndroidManifest.xml:7:19
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:11:13
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:12:17
+	android:name
+		ADDED from AndroidManifest.xml:12:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:13:17
+	android:name
+		ADDED from AndroidManifest.xml:13:27
+activity#wordroid.activitys.Test
+ADDED from AndroidManifest.xml:16:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:18:12
+	android:configChanges
+		ADDED from AndroidManifest.xml:17:12
+	android:name
+		ADDED from AndroidManifest.xml:16:19
+activity#wordroid.activitys.study
+ADDED from AndroidManifest.xml:20:9
+	android:name
+		ADDED from AndroidManifest.xml:20:19
+activity#wordroid.activitys.studyWord
+ADDED from AndroidManifest.xml:22:9
+	android:name
+		ADDED from AndroidManifest.xml:22:19
+activity#wordroid.activitys.TestList
+ADDED from AndroidManifest.xml:24:9
+	android:name
+		ADDED from AndroidManifest.xml:24:19
+receiver#wordroid.widget.Wordroid_Widget
+ADDED from AndroidManifest.xml:26:9
+	android:label
+		ADDED from AndroidManifest.xml:27:17
+	android:icon
+		ADDED from AndroidManifest.xml:28:17
+	android:name
+		ADDED from AndroidManifest.xml:26:19
+intent-filter#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:29:13
+action#android.appwidget.action.APPWIDGET_UPDATE
+ADDED from AndroidManifest.xml:30:18
+	android:name
+		ADDED from AndroidManifest.xml:30:26
+intent-filter#ADD+LAST+NEXT
+ADDED from AndroidManifest.xml:32:13
+action#NEXT
+ADDED from AndroidManifest.xml:33:13
+	android:name
+		ADDED from AndroidManifest.xml:33:21
+action#LAST
+ADDED from AndroidManifest.xml:34:13
+	android:name
+		ADDED from AndroidManifest.xml:34:21
+action#ADD
+ADDED from AndroidManifest.xml:35:13
+	android:name
+		ADDED from AndroidManifest.xml:35:21
+meta-data#android.appwidget.provider
+ADDED from AndroidManifest.xml:37:19
+	android:resource
+		ADDED from AndroidManifest.xml:37:72
+	android:name
+		ADDED from AndroidManifest.xml:37:30
+uses-sdk
+INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:support-v4:22.0.0:20:5
+	android:targetSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
+	android:minSdkVersion
+		INJECTED from AndroidManifest.xml:0:0
+		INJECTED from AndroidManifest.xml:0:0
