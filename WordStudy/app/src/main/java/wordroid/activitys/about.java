@@ -32,7 +32,7 @@ public class about extends Activity implements AboutFragment1.OnFragmentInteract
                 .addToBackStack(null)
                 .commit();
     }
-
+	//
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
     @Override
     public void onBackPressed(){
