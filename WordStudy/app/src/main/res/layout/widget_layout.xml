@@ -29,7 +29,11 @@
 		android:layout_height="fill_parent" 
 		android:background="@drawable/widget_next_btn"
 		android:padding="5px"
+<<<<<<< HEAD
 		android:text="上一个"
+=======
+		android:text="@string/preview"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 	></Button>
 	<Button
 		android:id="@+id/widget_add"
@@ -45,7 +49,11 @@
 		android:layout_height="fill_parent" 
 			android:background="@drawable/widget_next_btn"
 			android:padding="5px"
+<<<<<<< HEAD
 			android:text="下一个"
+=======
+			android:text="string/next"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 	></Button>
   </LinearLayout>
 </RelativeLayout>

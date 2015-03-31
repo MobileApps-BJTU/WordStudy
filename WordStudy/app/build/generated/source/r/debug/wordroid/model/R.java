@@ -71,6 +71,7 @@ public final class R {
         public static final int widget_panel=0x7f020039;
     }
     public static final class id {
+<<<<<<< HEAD
         public static final int FrameLayout01=0x7f070023;
         public static final int ImageButton01=0x7f07001d;
         public static final int Meanning=0x7f070028;
@@ -142,14 +143,122 @@ public final class R {
         public static final int test_list=0x7f03000b;
         public static final int test_list_item=0x7f03000c;
         public static final int widget_layout=0x7f03000d;
+=======
+        public static final int FrameLayout01=0x7f07002b;
+        public static final int ImageButton01=0x7f070029;
+        public static final int ImageButton02=0x7f07001e;
+        public static final int Meanning=0x7f070030;
+        public static final int NextButton=0x7f070035;
+        public static final int OverButton=0x7f070036;
+        public static final int RadioButton0=0x7f070031;
+        public static final int RadioButton1=0x7f070032;
+        public static final int RadioButton2=0x7f070033;
+        public static final int RadioButton3=0x7f070034;
+        public static final int Spelling=0x7f07002f;
+        public static final int TextView01=0x7f07002c;
+        public static final int TextView02=0x7f07002d;
+        public static final int add=0x7f070021;
+        public static final int attention=0x7f07001a;
+        public static final int beforeone=0x7f07002a;
+        public static final int bookinfo=0x7f070012;
+        public static final int button=0x7f070000;
+        public static final int date=0x7f070009;
+        public static final int day=0x7f07000a;
+        public static final int delete=0x7f07001b;
+        public static final int file_row=0x7f070001;
+        public static final int fragment_holder=0x7f070027;
+        public static final int info=0x7f070020;
+        public static final int label=0x7f070003;
+        public static final int lasttime=0x7f070005;
+        public static final int learn=0x7f070017;
+        public static final int learn_progress=0x7f070014;
+        public static final int learn_text=0x7f070013;
+        public static final int list1_image=0x7f070002;
+        public static final int list2_image=0x7f070006;
+        public static final int list3_image=0x7f070008;
+        public static final int list4_image=0x7f07000c;
+        public static final int list5_image=0x7f07000d;
+        public static final int lists=0x7f07000b;
+        public static final int nextone=0x7f070026;
+        public static final int notremember=0x7f070023;
+        public static final int pickBook=0x7f070011;
+        public static final int pickBook1=0x7f070010;
+        public static final int remember=0x7f070022;
+        public static final int reset=0x7f07001c;
+        public static final int review=0x7f070018;
+        public static final int review_progress=0x7f070016;
+        public static final int review_text=0x7f070015;
+        public static final int review_title=0x7f07001d;
+        public static final int right=0x7f070024;
+        public static final int spelling=0x7f07001f;
+        public static final int state=0x7f070007;
+        public static final int status=0x7f07000e;
+        public static final int study_title=0x7f070028;
+        public static final int test=0x7f070019;
+        public static final int test_addintoattention=0x7f070037;
+        public static final int test_list_image=0x7f070038;
+        public static final int test_list_item_1=0x7f070039;
+        public static final int test_list_item_2=0x7f07003a;
+        public static final int test_title=0x7f07002e;
+        public static final int times=0x7f070004;
+        public static final int top_bar=0x7f07000f;
+        public static final int widget_add=0x7f07003d;
+        public static final int widget_last=0x7f07003c;
+        public static final int widget_next=0x7f07003e;
+        public static final int widget_text=0x7f07003b;
+        public static final int wrong=0x7f070025;
+    }
+    public static final class layout {
+        public static final int about_fragment1=0x7f030000;
+        public static final int about_fragment2=0x7f030001;
+        public static final int attention=0x7f030002;
+        public static final int file_row=0x7f030003;
+        public static final int import_book=0x7f030004;
+        public static final int list1=0x7f030005;
+        public static final int list2=0x7f030006;
+        public static final int list3=0x7f030007;
+        public static final int list4=0x7f030008;
+        public static final int list5=0x7f030009;
+        public static final int login=0x7f03000a;
+        public static final int main=0x7f03000b;
+        public static final int reviewlayout=0x7f03000c;
+        public static final int showabout=0x7f03000d;
+        public static final int studyword=0x7f03000e;
+        public static final int studyword_main=0x7f03000f;
+        public static final int test=0x7f030010;
+        public static final int test_list=0x7f030011;
+        public static final int test_list_item=0x7f030012;
+        public static final int widget_layout=0x7f030013;
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     }
     public static final class raw {
         public static final int wordorid=0x7f050000;
     }
     public static final class string {
+<<<<<<< HEAD
         public static final int app_name=0x7f060000;
         public static final int hello=0x7f060001;
         public static final int hello_blank_fragment=0x7f060002;
+=======
+        public static final int addToGlossary=0x7f060000;
+        public static final int app_name=0x7f060001;
+        public static final int end=0x7f060002;
+        public static final int forget=0x7f060003;
+        public static final int glossary=0x7f060004;
+        public static final int hello=0x7f060005;
+        public static final int next=0x7f060006;
+        public static final int preview=0x7f060007;
+        public static final int remember=0x7f060008;
+        public static final int review0=0x7f060009;
+        public static final int review1=0x7f06000a;
+        public static final int right=0x7f06000b;
+        public static final int something=0x7f06000c;
+        public static final int study0=0x7f06000d;
+        public static final int test=0x7f06000e;
+        public static final int test_list=0x7f06000f;
+        public static final int word_memorize=0x7f060010;
+        public static final int wrong=0x7f060011;
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     }
     public static final class xml {
         public static final int widget_info=0x7f040000;

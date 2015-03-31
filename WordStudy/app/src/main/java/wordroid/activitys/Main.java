@@ -76,6 +76,10 @@ public class Main extends Activity implements OnClickListener{
                     // TODO Auto-generated catch block
                     e1.printStackTrace();
                 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
             }
         };
         thread.start();
@@ -172,6 +176,10 @@ public class Main extends Activity implements OnClickListener{
                 // TODO Auto-generated method stub
 
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         });
         if (bookList.size()==0) {
             pickBook.setSelection(1);
@@ -238,6 +246,14 @@ public class Main extends Activity implements OnClickListener{
     @Override
     public void onClick(View v) {
         // TODO Auto-generated method stub
+<<<<<<< HEAD
+=======
+        if (v==reviewBu){
+            Intent intent = new Intent();
+            intent.setClass(Main.this, ReviewMain.class);
+            this.startActivity(intent);
+        }
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         if (v==testBu){
             Intent intent = new Intent();
             intent.setClass(Main.this, TestList.class);
@@ -287,6 +303,10 @@ public class Main extends Activity implements OnClickListener{
             intent.setClass(Main.this, study.class);
             this.startActivity(intent);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     }
 
     @Override
@@ -305,9 +325,24 @@ public class Main extends Activity implements OnClickListener{
         menu.add(0, MENU_CONTACT, 2, "About");
         return super.onCreateOptionsMenu(menu);
     }
+<<<<<<< HEAD
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // TODO Auto-generated method stub
+=======
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // TODO Auto-generated method stub
+        switch(item.getItemId()){
+            case MENU_CONTACT:{
+                Intent intent = new Intent();
+                intent.setClass(this, about.class);
+                startActivity(intent);
+                break;
+            }
+        }
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         return super.onOptionsItemSelected(item);
     }
 

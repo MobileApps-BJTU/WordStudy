@@ -20,9 +20,15 @@ import java.io.InputStream;
 import java.text.*;
 
 public class DataAccess {
+<<<<<<< HEAD
     public  static String bookID="";           //book
     public  static String listID;           //List
     public  static int NumOfAttention;   //word
+=======
+    public  static String bookID="";
+    public  static String listID;           //list
+    public  static int NumOfAttention;   //word number
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     public  Context context;
     private SqlHelper helper;
     public static boolean ifContinue;
@@ -42,7 +48,13 @@ public class DataAccess {
 
     }
 
+<<<<<<< HEAD
 
+=======
+    /*
+     * initial list
+     */
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     public boolean initBook(String bookname,ArrayList<Word> list,String numOfList,String NewName) throws Exception{
         boolean success = false;
         String bookName = null;
@@ -105,7 +117,11 @@ public class DataAccess {
     }
 
     /*
+<<<<<<< HEAD
      *Query
+=======
+     *query list
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
      */
     public ArrayList<BookList> QueryBook(String selection,String[] selectionArgs){
 
@@ -129,7 +145,11 @@ public class DataAccess {
     }
 
     /*
+<<<<<<< HEAD
      *Search
+=======
+     * query word
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
      */
     public ArrayList<Word> QueryWord(String selection,String[] selectionArgs){
         Cursor cursor =helper.Query(context, bookID, null, selection, selectionArgs, null, null, null);
@@ -155,7 +175,11 @@ public class DataAccess {
     }
 
     /*
+<<<<<<< HEAD
      * Query list
+=======
+     * query the condition of list
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
      */
     public ArrayList<WordList> QueryList(String selection,String[] selectionArgs){
         Cursor cursor=helper.Query(context, SqlHelper.WORDLIST_TABLE, null, selection, selectionArgs, null, null, null);
@@ -184,7 +208,11 @@ public class DataAccess {
     }
 
     /*
+<<<<<<< HEAD
      * Update list
+=======
+     * update list
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
      */
     public void UpdateList(WordList list){
         ContentValues cv = new ContentValues();
@@ -201,7 +229,11 @@ public class DataAccess {
     }
 
     /*
+<<<<<<< HEAD
      * Delete list
+=======
+     * delete list
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
      */
     public void DeleteBook(){
         helper.Delete(context, SqlHelper.WORDLIST_TABLE, "BOOKID ='"+DataAccess.bookID+"'", null);
@@ -209,7 +241,60 @@ public class DataAccess {
         helper.DeleteTable(context, DataAccess.bookID);
     }
 
+<<<<<<< HEAD
 
+=======
+    /*
+     * add glossary
+     */
+    public void InsertIntoAttention(Word word){
+        ContentValues cv = new ContentValues();
+        cv.put("ID", String.valueOf(DataAccess.NumOfAttention+1));
+        cv.put("SPELLING", word.getSpelling());
+        cv.put("MEANNING", word.getMeanning());
+        cv.put("PHONETIC_ALPHABET", word.getPhonetic_alphabet());
+        cv.put("LIST", "Attention");
+        helper.Insert(context, SqlHelper.ATTENTION_TABLE, cv);
+
+    }
+
+    /*
+     * delete word
+     */
+    public void DeleteFromAttention(Word word){
+        helper.Delete(context, SqlHelper.ATTENTION_TABLE, "ID ='"+word.getID()+"'", null);
+    }
+	
+	/*
+	 * query word”
+	 */
+
+    public ArrayList<Word> QueryAttention(String selection,String[] selectionArgs){
+        Cursor cursor =helper.Query(context, SqlHelper.ATTENTION_TABLE, null, selection, selectionArgs, null, null, null);
+        ArrayList<Word> list = new ArrayList<Word>();
+        if (cursor.moveToFirst()){
+
+
+            do{
+                Word word=new Word();
+                word.setID(cursor.getString(0));
+                word.setSpelling(cursor.getString(1));
+                word.setMeanning(cursor.getString(2));
+                word.setPhonetic_alphabet(cursor.getString(3));
+                word.setList(cursor.getString(4));
+                list.add(word);
+                //  		Log.i("Querying word:",word.getSpelling());
+            }
+            while(cursor.moveToNext());
+        }
+        cursor.close();
+        return list;
+    }
+
+    /*
+     * add list finish
+     */
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     public void InsertIntoList(WordList list){
         ContentValues cv = new ContentValues();
         cv.put("BOOKID", list.getBookID());
@@ -239,4 +324,17 @@ public class DataAccess {
 
         }
     }
+<<<<<<< HEAD
+=======
+
+    public void UpdateAttention (Word word){
+        ContentValues cv = new ContentValues();
+        cv.put("ID", word.getID());
+        cv.put("SPELLING", word.getSpelling());
+        cv.put("MEANNING", word.getMeanning());
+        cv.put("PHONETIC_ALPHABET", word.getPhonetic_alphabet());
+        cv.put("LIST", word.getList());
+        helper.Update(context, SqlHelper.ATTENTION_TABLE, cv, "ID ='"+word.getID()+"'", null);
+    }
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 }
