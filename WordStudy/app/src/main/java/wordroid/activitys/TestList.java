@@ -22,9 +22,17 @@ public class TestList extends ListActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         // TODO Auto-generated method stub
+<<<<<<< HEAD
         DataAccess dataAccess = new DataAccess(this);
         BookList book =dataAccess.QueryBook("ID ='"+DataAccess.bookID+"'", null).get(0);
         this.setTitle("Test-"+book.getName());
+=======
+
+        DataAccess dataAccess = new DataAccess(this);
+        BookList book =dataAccess.QueryBook("ID ='"+DataAccess.bookID+"'", null).get(0);
+        this.setTitle("Test-"+book.getName());
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         super.onCreate(savedInstanceState);
         this.setContentView(R.layout.test_list);
     }
@@ -46,10 +54,21 @@ public class TestList extends ListActivity {
     private List<Map<String, Object>> getData() {
         // TODO Auto-generated method stub
         List<Map<String, Object>> list = new ArrayList<Map<String, Object>>();
+<<<<<<< HEAD
         DataAccess dataAccess = new DataAccess(this);
         ArrayList<WordList> wordList = dataAccess.QueryList("BOOKID = '"+DataAccess.bookID+"'", null);
         System.out.println("size:" + wordList.size());
         Map<String, Object> map;
+=======
+
+        DataAccess dataAccess = new DataAccess(this);
+        ArrayList<WordList> wordList = dataAccess.QueryList("BOOKID = '"+DataAccess.bookID+"'", null);
+
+        System.out.println("size:" + wordList.size());
+
+        Map<String, Object> map;
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         for (int i = 0; i < wordList.size(); i++) {
             map = new HashMap<String, Object>();
             map.put("word_list", "List" + wordList.get(i).getList());
@@ -58,6 +77,10 @@ public class TestList extends ListActivity {
             else map.put("image", android.R.drawable.btn_star_big_on);
             list.add(map);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         return list;
     }
 
@@ -65,10 +88,18 @@ public class TestList extends ListActivity {
     protected void onListItemClick(ListView l, View v, int position, long id) {
         // TODO Auto-generated method stub
         super.onListItemClick(l, v, position, id);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         Intent intent = new	Intent();
         intent.setClass(TestList.this, Test.class);
         intent.putExtra("wordList", ""+position);
         TestList.this.startActivity(intent);
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         System.out.println(position);
     }
 

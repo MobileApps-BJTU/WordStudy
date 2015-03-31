@@ -13,7 +13,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+<<<<<<< HEAD
         <activity android:name="wordroid.activitys.Test"
+=======
+        <activity android:name="wordroid.activitys.ReviewMain">
+        </activity>
+        <activity android:name="wordroid.activitys.Review"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait">
+        </activity>
+           <activity android:name="wordroid.activitys.Test"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
            android:configChanges="orientation|keyboardHidden"
            android:screenOrientation="portrait">
         </activity>
@@ -21,6 +31,12 @@
         </activity>
         <activity android:name="wordroid.activitys.studyWord">
         </activity>
+<<<<<<< HEAD
+=======
+         <activity android:name="wordroid.activitys.about"
+        android:configChanges="orientation|keyboardHidden"
+        android:screenOrientation="portrait"/>
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         <activity android:name="wordroid.activitys.TestList">
         </activity>
         <receiver android:name="wordroid.widget.Wordroid_Widget"
@@ -36,6 +52,16 @@
             </intent-filter>
                   <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget_info" />
         </receiver>
+<<<<<<< HEAD
+=======
+        <receiver android:name="wordroid.business.makeNotify"
+        android:process=":remote">
+        <intent-filter>
+                 <action android:name="android.intent.action.BOOT_COMPLETED" /> 
+                 <action android:name="shownotify"/>
+            </intent-filter>
+        </receiver>
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 
     </application>
 

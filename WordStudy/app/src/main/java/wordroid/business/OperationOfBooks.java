@@ -1,8 +1,11 @@
 package wordroid.business;
 
+<<<<<<< HEAD
 import android.content.Context;
 import android.util.Log;
 
+=======
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
@@ -13,15 +16,27 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.StringTokenizer;
 
+<<<<<<< HEAD
+=======
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 import wordroid.database.DataAccess;
 import wordroid.model.Word;
 import wordroid.model.WordList;
 
 public class OperationOfBooks {
     public static boolean ifContinue;
+<<<<<<< HEAD
     /*
      * initialise the list
      */
+=======
+
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     public boolean ImportBook(Context context,String FileName,String NewName,int NumOfEachList,String order) throws Exception{
         ifContinue=true;
         ArrayList<Word> list = new ArrayList<Word>();
@@ -52,6 +67,12 @@ public class OperationOfBooks {
         }
         ArrayList<Word> mylist = initWordList(list,order);
 
+<<<<<<< HEAD
+=======
+//			for (int i=0;i<list.size();i++){
+//				Log.i("Check list 1",list.get(i).getSpelling()+list.get(i).getMeanning());
+//			}
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         DataAccess data = new DataAccess(context);
         boolean success;
         try{
@@ -59,6 +80,12 @@ public class OperationOfBooks {
         }catch(Exception e){
             throw new Exception();
         }
+<<<<<<< HEAD
+=======
+
+        //		Log.i("bookID",bookID);
+        //		Log.i("listnum",""+listnum);
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         return success;
 
 
@@ -341,6 +368,20 @@ public class OperationOfBooks {
         calendar.set(Calendar.MILLISECOND, 0);
         SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
         Log.i("", f.format(calendar.getTime()));
+<<<<<<< HEAD
+=======
+        long starttime=calendar.getTimeInMillis();
+        long repeattime = 24*60*60*1000;
+        AlarmManager am = (AlarmManager) context.getSystemService("alarm");
+        Intent intent = new Intent(context,makeNotify.class);
+        intent.setAction("shownotify");
+        PendingIntent sender = PendingIntent.getBroadcast(context, 0, intent, 0);
+        am.cancel(sender);
+        Intent intent2 = new Intent(context,makeNotify.class);
+        intent2.setAction("shownotify");
+        PendingIntent sender2 = PendingIntent.getBroadcast(context, 0, intent2, 0);
+        am.setRepeating(AlarmManager.RTC, starttime, repeattime, sender2);
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         Log.i("it's on", "on");
     }
 }

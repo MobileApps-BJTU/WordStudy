@@ -43,7 +43,11 @@
     android:layout_height="wrap_content" 
     android:textColor="#000000"
     android:id="@+id/bookinfo"
+<<<<<<< HEAD
     android:text="something"
+=======
+        android:text="@string/something"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     android:paddingTop="10px"
     android:paddingBottom="10px"
     />
@@ -59,7 +63,11 @@
   android:layout_width="wrap_content" 
   android:layout_height="wrap_content"
   android:textColor="#000000"
+<<<<<<< HEAD
   android:text="已学习0/0" 
+=======
+  android:text="@string/study0"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     />
   
   <ProgressBar 
@@ -81,7 +89,11 @@
   android:layout_width="wrap_content" 
   android:layout_height="wrap_content"
   android:textColor="#000000"
+<<<<<<< HEAD
   android:text="已复习0/0" 
+=======
+  android:text="@string/review0"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     />
   
   <ProgressBar 
@@ -158,4 +170,8 @@
 	></ImageButton>
   </LinearLayout>
 </RelativeLayout>
+<<<<<<< HEAD
 <!-- From: file:/D:/1202-three/Android%20app/finalPro/WordStudy/WordStudy/app/src/main/res/layout/main.xml -->
+=======
+<!-- From: file:/D:/1202-three/Android%20app/ppro/WordStudy-version2/WordStudy-version2/WordStudy/app/src/main/res/layout/main.xml -->
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02

@@ -10,7 +10,11 @@
   android:id="@+id/test_title" 
   android:layout_height="wrap_content" 
    android:textSize="14px"
+<<<<<<< HEAD
    android:text="   选择测试单元："
+=======
+   android:text="@string/test_list"
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
    android:textColor="#000000"
    android:background="@drawable/main_budget_lv_header"
   />
