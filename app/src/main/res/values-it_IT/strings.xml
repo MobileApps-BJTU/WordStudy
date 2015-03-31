@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Ciao mondo, Main!</string>
+    <string name="app_name">ParolaStudio</string>
+    <string name="glossary">Glossario:</string>
+    <string name="something">Qualcosa</string>
+    <string name="study0">Studio 0/0</string>
+    <string name="review0">Recensione 0/0</string>
+    <string name="review1">Recensione Parola</string>
+    <string name="addToGlossary">Aggiungere</string>
+    <string name="remember">Ricordare</string>
+    <string name="forget">Dimenticare</string>
+    <string name="right">Destra</string>
+    <string name="wrong">Sbagliato</string>
+    <string name="next">Prossimo</string>
+    <string name="word_memorize">Parola Memoria</string>
+    <string name="preview">Anteprima</string>
+    <string name="end">Fine</string>
+    <string name="test">Parola Prova</string>
+    <string name="test_list">Scegliere l'elenco per verificare</string>
+
+</resources>

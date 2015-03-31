@@ -1,0 +1,10 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/about_frag2"
+    tools:context="wordroid.Explanation.AboutFragment2">
+
+
+</FrameLayout>
+<!-- From: file:/D:/1202-three/Android%20app/ppro/WordStudy-version2/WordStudy-version2/WordStudy/app/src/main/res/layout/about_fragment2.xml -->
