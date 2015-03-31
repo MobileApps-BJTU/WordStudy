@@ -4,4 +4,8 @@
   android:initialLayout="@layout/widget_layout"
   android:minWidth="144dip"
 android:minHeight="144dip"/>
+<<<<<<< HEAD
 <!-- From: file:/D:/1202-three/Android%20app/finalPro/WordStudy/WordStudy/app/src/main/res/xml/widget_info.xml -->
+=======
+<!-- From: file:/D:/1202-three/Android%20app/ppro/WordStudy-version2/WordStudy-version2/WordStudy/app/src/main/res/xml/widget_info.xml -->
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02

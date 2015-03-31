@@ -247,7 +247,11 @@ public class study extends TabActivity implements TabHost.TabContentFactory{
                                 Intent intent = new Intent();
                                 Bundle bundle = new Bundle();
                                 bundle.putString("list", String.valueOf(arg2+1));
+<<<<<<< HEAD
                                intent.setClass(study.this, studyWord.class);
+=======
+                                intent.setClass(study.this, studyWord.class);
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
                                 intent.putExtras(bundle);
                                 finish();
                                 startActivity(intent);
@@ -275,7 +279,11 @@ public class study extends TabActivity implements TabHost.TabContentFactory{
                             Intent intent = new Intent();
                             Bundle bundle = new Bundle();
                             bundle.putString("list", listShould.get(arg2));
+<<<<<<< HEAD
                            intent.setClass(study.this, studyWord.class);
+=======
+                            intent.setClass(study.this, studyWord.class);
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
                             intent.putExtras(bundle);
                             startActivity(intent);
                         }
@@ -289,6 +297,7 @@ public class study extends TabActivity implements TabHost.TabContentFactory{
         }
     }
 
+<<<<<<< HEAD
 	protected void onListItemClick(ListView l,View v,int position,long id){
     	 Intent intent = null;
     	 switch(position){
@@ -302,5 +311,20 @@ public class study extends TabActivity implements TabHost.TabContentFactory{
     		 break;
     	 }
      }
+=======
+    protected void onListItemClick(ListView l,View v,int position,long id){
+        Intent intent = null;
+        switch(position){
+            case 0:
+                intent = new Intent(study.this,studyWord.class);
+                startActivity(intent);
+                break;
+            case 1:
+                intent = new Intent(study.this,studyWord.class);
+                startActivity(intent);
+                break;
+        }
+    }
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
 
 }

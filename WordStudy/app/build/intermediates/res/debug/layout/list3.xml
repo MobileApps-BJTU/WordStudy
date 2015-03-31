@@ -41,4 +41,8 @@ android:id="@+id/list3_image"/>
    android:textColor="#000000"
   />
   </LinearLayout>
+<<<<<<< HEAD
 </RelativeLayout><!-- From: file:/D:/1202-three/Android%20app/finalPro/WordStudy/WordStudy/app/src/main/res/layout/list3.xml -->
+=======
+</RelativeLayout><!-- From: file:/D:/1202-three/Android%20app/ppro/WordStudy-version2/WordStudy-version2/WordStudy/app/src/main/res/layout/list3.xml -->
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02

@@ -81,6 +81,17 @@ public class Test extends Activity {
 
             @Override
             public void onClick(View v) {
+<<<<<<< HEAD
+=======
+                DataAccess data = new DataAccess(Test.this);
+                ArrayList<Word> attention = new ArrayList<Word>();
+                attention=data.QueryAttention("SPELLING ='"+list.get(rand[currentId]).getSpelling()+"'", null);
+                if (attention.size()==0){
+                    data.InsertIntoAttention(list.get(rand[currentId]));
+                    Toast.makeText(Test.this, "Into the glossary", Toast.LENGTH_SHORT).show();
+                }
+                else Toast.makeText(Test.this, "It is already in the glossary！", Toast.LENGTH_SHORT).show();
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
             }
 
         });

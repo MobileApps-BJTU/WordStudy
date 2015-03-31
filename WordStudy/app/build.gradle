@@ -6,8 +6,11 @@ android {
 
     defaultConfig {
         applicationId "wordroid.model"
+<<<<<<< HEAD
         minSdkVersion 10
         targetSdkVersion 19
+=======
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
     }
 
     buildTypes {
@@ -17,6 +20,9 @@ android {
         }
     }
 }
+<<<<<<< HEAD
 dependencies {
     compile 'com.android.support:support-v4:22.0.0'
 }
+=======
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02

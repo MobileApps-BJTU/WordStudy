@@ -43,9 +43,19 @@ public class Wordroid_Widget extends AppWidgetProvider {
         PendingIntent lastPendingIntent = PendingIntent.getBroadcast(context, 0, lastIntent, 0);
         views.setOnClickPendingIntent(R.id.widget_last, lastPendingIntent);
 
+<<<<<<< HEAD
 
         DataAccess data = new DataAccess(context);
         words = new ArrayList<Word>();
+=======
+        DataAccess data = new DataAccess(context);
+        words = new ArrayList<Word>();
+        words=data.QueryAttention(null, null);
+        if (words.size()>0){
+            views.setTextViewText(R.id.widget_text, words.get(num).getSpelling()+"\n"+words.get(num).getMeanning());
+
+        }
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         appWidgetManager.updateAppWidget(appWidgetIds, views);
     }
 
@@ -56,7 +66,11 @@ public class Wordroid_Widget extends AppWidgetProvider {
         super.onReceive(context, intent);
         DataAccess data = new DataAccess(context);
         words = new ArrayList<Word>();
+<<<<<<< HEAD
 //        words=data.QueryAttention(null, null);
+=======
+        words=data.QueryAttention(null, null);
+>>>>>>> 9115b0cf1f69b1442accab3374673575fabe1e02
         if(intent.getAction().equals(next_action)){
             if (num==words.size()-1)num=0;
             else num++;
