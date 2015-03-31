@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Bonjour monde, Main!</string>
+    <string name="app_name">Mot étude</string>
+    <string name="glossary">Glossaire:</string>
+    <string name="something">Quelque Chose</string>
+    <string name="study0">étude 0/0</string>
+    <string name="review0">Examen 0/0</string>
+    <string name="review1">Examen mot</string>
+    <string name="addToGlossary">AjouterGlo</string>
+    <string name="remember">Rappeler</string>
+    <string name="forget">Oublier</string>
+    <string name="right">Corriger</string>
+    <string name="wrong">Mal</string>
+    <string name="next">Prochain</string>
+    <string name="word_memorize">Mot Mémoriser</string>
+    <string name="preview">Première</string>
+    <string name="end">Fin</string>
+    <string name="test">Mot Test</string>
+    <string name="test_list">Choisissez la liste de tester</string>
+
+</resources>
